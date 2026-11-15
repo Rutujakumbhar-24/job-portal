@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Employer Dashboard - JobPortal</title>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<div class="page-banner">
+<div class="container d-flex justify-content-between align-items-center">
+<h2 class="mb-0">Employer Dashboard</h2>
+<a href="post-job.html" class="btn btn-warning">+ Post New Job</a>
+</div>
+</div>
+<div class="container">
+<div id="msg"></div>
+<h4>My Posted Jobs</h4>
+<div class="table-responsive form-card mb-4">
+<table class="table align-middle mb-0">
+<thead>
+<tr>
+<th>Title</th><th>Location</th><th>Type</th><th>Posted</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="myJobs"></tbody>
+</table>
+</div>
+<h4 id="applicantsTitle"></h4>
+<div id="applicantsBox"></div>
+</div>
+<div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/employer.js"></script>
+</body>
+</html>
